@@ -1,0 +1,17 @@
+﻿@page
+@model BlogCrud.Pages.SessionModel
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cookies</h1>
+    <form method="post">
+        <input type="text" name="title">
+
+        <input type="submit" value="Add"/>
+    </form>
+
+    <p>
+        Title: @HttpContext.Request.Cookies["title"]
+    </p>
+</div>
